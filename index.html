@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindx novamente. Faca login para acessar sua conta e poder fazer as configuracoes no seu ambiente</p>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo" id="email">
+                        <span class="material-symbols-outlined">person_4</span>
+                        <label for="iemail">email</label>
+                        <input type="email" name="email" id="iemail" required minlength="8" maxlength="60" autocomplete="email">
+                    </div>
+                    <div class="campo" id="password">
+                        <span class="material-symbols-outlined">key</span>
+                        <label for="ipassword">password</label>
+                        <input type="password" name="user" id="ipassword" required minlength="8" maxlength="60" autocomplete="current-password">
+                    </div>
+                    <div>
+                        <input type="submit" value="Entrar">
+                    </div>
+                    <div>
+                        <a href="esqueciSenha.html" class="botao">
+                            Esqueci a Senha <span class="material-symbols-outlined">mail</span> 
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
